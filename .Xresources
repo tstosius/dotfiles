@@ -1,0 +1,87 @@
+! Use a nice truetype font and size by default...
+xterm*faceName: Terminus
+xterm*faceSize: 12
+!
+! ! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+ xterm*loginshell: true
+
+! ROFI THEME !
+rofi.color-enabled              : true
+rofi.font                       : terminus 12
+rofi.line-margin                : 6
+rofi.lines                      : 3
+rofi.columns                    : 1
+rofi.terminal                   : termite
+rofi.width                      : 40
+rofi.padding                    : 100
+rofi.ssh-command                : {terminal} -e "{ssh-client} {host}"
+rofi.color-window               : #BB111111, #BB51C4D4, #00111111
+rofi.color-normal               : #00111111, #BB51C4D4, #00111111, #00111111, #EE51C4D4
+rofi.color-active               : #BB111111, #BB51C4D4, #00111111, #00111111, #BB111111
+rofi.color-urgent               : #BB111111, #BB51C4D4, #00111111, #00111111, #BB111111
+
+! made w/ http://terminal.sexy/
+
+! special
+*.foreground:   #ee4d2e
+! ! green: 1db992
+! ! olive: bfbc06
+! ! blue:  008fff
+! ! pink:  ff0082
+
+*.background:   #222222
+*.cursorColor:  #f2f5f4
+
+! black
+*.color0:       #282a2e
+*.color8:       #3b3b40
+
+! red
+*.color1:       #7f2a19
+*.color9:       #ee4e2e
+
+! green
+*.color2:       #407f40
+*.color10:      #5cb85c
+
+! yellow
+*.color3:       #99974b
+*.color11:      #f7c516
+
+! blue
+*.color4:       #4b9299
+*.color12:      #008fff
+
+! magenta
+*.color5:       #994b73
+*.color13:      #ff0082
+
+! cyan
+*.color6:       #4b9986
+*.color14:      #1cb992
+
+! white
+*.color7:       #888888
+*.color15:      #f2f5f4
+
+URxvt*depth: 24
+URxvt*geometry: 100x25
+URxvt.borderColor: #222222
+URxvt.internalBorder: 2
+URxvt.cursorUnderline: true
+
+! -- scrollbar
+URxvt.scrollstyle: plain
+URxvt.scrollBar: false
+URxvt*scrollTtyOuput: false
+URxvt*scrollWidthBuffer: true
+URxvt*scrollTtyKeypress: true
+
+! -- login shell
+URxvt*loginShell: false
+
+! -- font
+URxvt.font:  xft:DejaVu Sans Mono:style=Book:size=13
+URxvt.letterSpace: -1
+
+urxvt*urgentOnBell: true
